@@ -1,6 +1,5 @@
 def main():
-    print("Hello GitHub 🚀")
-    print("Premier commit avec VS Code et Anaconda")
+    print("test GitHub 🚀")
 
 if __name__ == "__main__":
     main()
