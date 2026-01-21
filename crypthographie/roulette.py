@@ -189,8 +189,8 @@ class RouletteEntropyCasino:
 
             lat = resp["iss_position"]["latitude"]
             lon = resp["iss_position"]["longitude"]
-            btc = data_shared["btc_price"] or 95000
-            cac = data_shared["cac40_price"] or 7500
+            btc = data_shared["btc_price"]
+            cac = data_shared["cac40_price"]
 
             seed = f"{btc}{cac}{lat}{lon}{time.time_ns()}"
             h = hashlib.sha512(seed.encode()).hexdigest()
