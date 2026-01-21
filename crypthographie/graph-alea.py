@@ -6,7 +6,7 @@ import time
 import threading
 import matplotlib.pyplot as plt
 import hashlib
-import yfinance as yf # Pour le CAC40
+import yfinance as yf
 
 # --- PARAMÈTRES ---
 NB_GENERATIONS_CIBLE = 1000 
