@@ -95,9 +95,12 @@ def afficher_analyses():
 
     # Graphique 1 : Histogramme
     axs[1].hist(resultats_entropie, bins=range(38), color='skyblue', edgecolor='black', alpha=0.7)
+    # AJOUT DE LA LIGNE DE MOYENNE (27)
+    axs[1].axhline(y=27, color='red', linestyle='--', linewidth=2, label='Moyenne théorique (27)')
     axs[1].set_title("2. Fréquence (Histogramme)")
     axs[1].set_xlabel("Chiffre")
     axs[1].set_ylabel("Nombre d'apparitions")
+    axs[1].legend() # Pour afficher le label de la ligne rouge
 
     # Graphique 2 : Trié
     axs[2].plot(sorted(resultats_entropie), color='green', linewidth=2)
