@@ -10,7 +10,7 @@ import yfinance as yf
 
 # --- PARAMÈTRES ---
 NB_GENERATIONS_CIBLE = 1000 
-BATCH_SIZE = 50 
+BATCH_SIZE = 1 
 VALEUR_MAX = 37 # Pour obtenir 0 à 36
 
 data_shared = {
